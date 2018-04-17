@@ -23,6 +23,7 @@ bool CreateWindow() {
 		SDL_Quit();
 		return 1;
 	}
+	return 0;
 }
 bool CreateRenderer() {
 	render = SDL_CreateRenderer(window, -1, 0);
@@ -33,6 +34,7 @@ bool CreateRenderer() {
 		SDL_Quit();
 		return 1;
 	}
+	return 0;
 }
 void SetupRenderer() {
 	// Set size of renderer to the same as window
